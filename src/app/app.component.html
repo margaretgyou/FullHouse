@@ -1,8 +1,41 @@
-<div class="container">
-  <h1>root text</h1>
-  <hr>
-  <app-navbar></app-navbar>
-  <app-login></app-login>
-</div>
 
+  <button (click)="testAddUserProfile()">Create my profile</button><br><br>
+  Login:
+  Email: <input #email><br>
+  Password: <input #password type='password'><br>
 
+  <button (click)="login(email.value, password.value)">Get my profile</button><br>
+  <h3>My Profile</h3>
+   Name: {{user.name}}<br>
+   Age: {{user.age}}<br>
+   Gender: {{user.gener}}<br>
+   Prefred Roommate Age: {{user.preferedRMage}}<br>
+   Prefred Roommate Gener: {{user.preferedRMgender}}<br>
+   Prefred Roommate Bedtime: {{user.preferedRMbedtime}}<br>
+  <br>
+
+  I do not have roome
+  <button (click)="findRoomProviders()">find me room providers</button><br>
+  <table class="table table-striped">
+  <tr>
+    <th>Email</th>
+    <th>Score</th>
+  </tr>
+  <tr *ngFor="let result of searchResultRoomProviderArray">
+    <td>{{ result.matcheremail }}</td>
+    <td>{{ result.matchscore }}</td>
+  </tr>
+</table><br>
+
+I have roome
+<button (click)="findRoomMates()">find me roommates</button><br>
+<table class="table table-striped">
+<tr>
+  <th>Email</th>
+  <th>Score</th>
+</tr>
+<tr *ngFor="let result of searchResultRoomMatesArray">
+  <td>{{ result.matcheremail }}</td>
+  <td>{{ result.matchscore }}</td>
+</tr>
+</table><br>

@@ -12,6 +12,7 @@ import { AngularFireList } from 'angularfire2/database';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   title = 'Full-House';
   userProfilService;

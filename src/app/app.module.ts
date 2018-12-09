@@ -16,11 +16,10 @@ import { PageNotFoundComponent } from './PageNotFound/error.component';
     LoginComponent,
     NavbarComponent,
     SignupComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
     AppComponent
   ],
   imports: [
-    BrowserModule
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule

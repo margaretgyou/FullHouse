@@ -1,0 +1,21 @@
+nav{
+  color: white;
+
+}
+
+nav.navbar{
+  -webkit-transition: all 0.6s ease-out;
+  -moz-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  -ms-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+
+}
+.navbar-colour{
+  background-color: transparent;
+  color: white;
+}
+
+nav.navbar.transparent{
+  background-color:white;
+}

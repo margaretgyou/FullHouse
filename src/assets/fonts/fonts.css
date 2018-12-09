@@ -1,0 +1,12 @@
+@font-face {
+  font-family: QuicksandBold;
+  src: url("/assets/fonts/Quicksand-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: QuicksandLight;
+  src: url("/assets/fonts/Quicksand-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: QuicksandRegular;
+  src: url("/assets/fonts/Quicksand-Regular.otf") format("opentype");
+}

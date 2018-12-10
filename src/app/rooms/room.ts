@@ -1,7 +1,5 @@
 export class Room {
-
   useremail: string;
-  key:string;
   price: string;
   address: string;
   city:string;

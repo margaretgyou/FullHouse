@@ -1,5 +1,4 @@
 export class UserProfile {
-  key:string
   email: string;
   password: string;
   age: string;

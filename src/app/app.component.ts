@@ -156,7 +156,6 @@ export class AppComponent {
   // Add a room for rent
   addRoom(address:string, city:string, description: string, pricerange: string){
     let room = new Room();
-    room.key = this.user.email + this.myRooms.length;
     room.useremail = this.user.email;
     room.address = address;
     room.price = pricerange;

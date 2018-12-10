@@ -19,8 +19,8 @@ export class UserProfileDataService {
     return this;
   }
 
-  updateUserProfile(email: string, user1: UserProfile){
-    this.users.valueChanges();
+  updateUserProfile(key: string, user1: UserProfile){
+    this.users.update(key, user1);
   }
   getUserProfiles(){
     this.users = this.db.list(this.basePath);

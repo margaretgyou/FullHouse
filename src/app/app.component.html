@@ -1,41 +1,88 @@
-
+  <br><br><br>
   <button (click)="testAddUserProfile()">Create my profile</button><br><br>
+  <button (click)="testUpdateUserProfile()">Update my profile</button><br><br>
+  <br><br>
   Login:
   Email: <input #email><br>
   Password: <input #password type='password'><br>
+  <button (click)="login(email.value, password.value)">Login</button><br>
+  <br><br>
 
-  <button (click)="login(email.value, password.value)">Get my profile</button><br>
+
   <h3>My Profile</h3>
+  {{user.$key}}
    Name: {{user.name}}<br>
    Age: {{user.age}}<br>
    Gender: {{user.gener}}<br>
-   Prefred Roommate Age: {{user.preferedRMage}}<br>
-   Prefred Roommate Gener: {{user.preferedRMgender}}<br>
-   Prefred Roommate Bedtime: {{user.preferedRMbedtime}}<br>
-  <br>
+   Preferred Roommate Age: {{user.preferedRMage}}<br>
+   Preferred Roommate Gener: {{user.preferedRMgender}}<br>
+   Preferred Roommate Bedtime: {{user.preferedRMbedtime}}<br>
 
-  I do not have roome
+
+
+  <h3>Enter room information:</h3>
+  Address: <input #address><br>
+  City: <input #city><br>
+  Description: <input #description><br>
+  Price Range: <input #pricerange><br>
+  <button (click)="addRoom(address.value, city.value, description.value, pricerange.value)">Add my room</button><br>
+  <br><br>
+
+
+  <h3>I do not have room</h3>
   <button (click)="findRoomProviders()">find me room providers</button><br>
-  <table class="table table-striped">
+  <table  border="1px">
   <tr>
     <th>Email</th>
     <th>Score</th>
+    <th>View Rooms</th>
   </tr>
   <tr *ngFor="let result of searchResultRoomProviderArray">
     <td>{{ result.matcheremail }}</td>
     <td>{{ result.matchscore }}</td>
+    <td><button (click)="dispayProviderRooms(result.matcheremail)">View Rooms</button></td>
   </tr>
-</table><br>
+  </table>
 
-I have roome
+  <h4>Provider Rooms</h4>
+  <table  border="1px">
+    <tr>
+      <th>Eamil</th>
+      <th>Address</th>
+      <th>Description</th>
+      <th>Price Range</th>
+    </tr>
+    <tr *ngFor="let room of providerRooms">
+      <td>{{ room.useremail}}</td>
+    <td>{{ room.address }}, {{ room.city }}</td>
+    <td>{{ room.description }}</td>
+    <td>{{ room.price }}</td>
+  </tr>
+  </table>
+
+<br><br>
+<h3>I have room</h3>
 <button (click)="findRoomMates()">find me roommates</button><br>
-<table class="table table-striped">
+<table border="1px">
 <tr>
   <th>Email</th>
   <th>Score</th>
+  <th>View Roommate</th>
+
+
 </tr>
 <tr *ngFor="let result of searchResultRoomMatesArray">
   <td>{{ result.matcheremail }}</td>
   <td>{{ result.matchscore }}</td>
+  <td><button (click)="displayRoommate(result.matcheremail)">View Roommate</button></td>
 </tr>
-</table><br>
+</table><br><br>
+<h4>Roommate Information</h4>
+
+    Eamil: {{roommate.email}}<br>
+    Name: {{roommate.name}}<br>
+    Age:{{roommate.age}}<br>
+    Gener: {{roommate.gender}}<br>
+    preferred Bedtime: {{roommate.preferedRMbedtime}}<br>
+<br><br>
+<button (click)="logout()">Logout</button><br>

@@ -1,9 +1,12 @@
 export class Room {
+
   useremail: string;
-  roomNo:string;
+  key:string;
+  price: string;
   address: string;
+  city:string;
   description: string;
-  pricerange: string;
+
 
   constructor( values: Object = {}){
     Object.assign(this, values);

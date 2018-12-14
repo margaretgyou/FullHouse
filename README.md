@@ -6,11 +6,11 @@ This project was made for COMP 307 - final project.
 
 Download node.js and npm.
 
-Download Angular CLI: npm install -g @angular/cli
+Download Angular CLI: `npm install -g @angular/cli`
 
 Navigate to project directory: 307fullhouse
 
-Run `ng serve` for a dev server.
+Run `ng serve` for to deploy to localhost
 
 Navigate to `http://localhost:4200/`. 
 

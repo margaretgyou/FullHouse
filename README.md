@@ -10,7 +10,7 @@ Install Angular CLI: `npm install -g @angular/cli`
 
 Navigate to project directory: 307fullhouse
 
-Run `ng serve` for to deploy to localhost
+Run `ng serve` to deploy to localhost
 
 Navigate to `http://localhost:4200/`. 
 

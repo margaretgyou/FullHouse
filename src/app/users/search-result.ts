@@ -1,5 +1,10 @@
+import { UserProfile } from './user-profile';
+import { Room} from '../rooms/room';
+
+
 export class SearchResult {
-  matcheremail: string;
+  room: Room;
+  roommate: UserProfile;
   matchscore: number;
 
   constructor( values: Object = {}){

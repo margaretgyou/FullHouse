@@ -15,7 +15,6 @@ export class UserProfileDataService {
 
   addUserProfile(user: UserProfile):UserProfileDataService{
     this.users.push(user);
-    console.log('added');
     return this;
   }
 

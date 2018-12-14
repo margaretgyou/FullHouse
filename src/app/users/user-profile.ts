@@ -1,16 +1,16 @@
 export class UserProfile {
   email: string;
   password: string;
-  age: string;
-  gender: string;
   name: string;
-  city:string
+  neighbourhood:string
   offerroom: boolean;
   preferedRMgender:string
   preferedRMage:string
   preferedRMbedtime:string
   preferedRMWaketime:string
   preferedRoomPrice:string
+  cleanliness:string
+  noise:string
   constructor( values: Object = {}){
     Object.assign(this, values);
   }

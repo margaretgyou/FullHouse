@@ -1,1 +1,27 @@
-<h1>login sample</h1>
+<div class="container">
+<div class="login">
+
+  <div class="loginBox col-md-8 col-lg-6">
+    <h3><b>Welcome Back</b></h3>
+    <h4>Please fill out the form below to log in.</h4> <br>
+    <form class="form-styled bg-white">
+
+      <!-- E-mail -->
+      <label>E-mail Address</label>
+      <input #email type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+      <!-- Password -->
+      <label>Password</label>
+      <input #password type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+      <br>
+      <div *ngIf="invalidLogin" style='color:red'>Email and password combination does not exist. <br>Try again.</div>
+    </form>
+    <button
+      class="btn btn-primary"
+      type="submit" (click)="login(email.value, password.value)">Log In Now</button><br>
+    <p>Not a member yet? <a routerLink="/signup">Sign up.</a> </p>
+  </div>
+
+</div>
+
+</div>

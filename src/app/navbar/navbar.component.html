@@ -1,7 +1,26 @@
-<!--NAV BAR-->
-<nav class="navbar navbar-fixed-top navbar-default">
-  <div class="container">
-    <a class="navbar-brand" href="#">FULL HOUSE</a>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container container-fluid">
+    <div class="navbar-header">
+      <span routerLink="" class="navbar-brand">Full House</span>
+    </div>
+    <div *ngIf="user">
+      <ul class="nav navbar-nav">
+        <li><a routerLink="/browse">Browse Listings</a></li>
+        <li><a routerLink="/postlisting">Post a Listing</a></li>
+      </ul>
+    </div>
 
-  </div><!--end containter-->
-</nav><!--end navbar-->
+    <div *ngIf="!user">
+       <ul class="nav navbar-nav navbar-right">
+        <li><a routerLink="/login">Login</a></li>
+        <li><a routerLink="/signup">Sign Up</a></li>
+        </ul>
+    </div>
+    <div *ngIf="user">
+         <ul class="nav navbar-nav navbar-right">
+           <li><a (click)="logout()">Logout</a></li>
+         </ul>
+    </div>
+
+  </div>
+</nav>

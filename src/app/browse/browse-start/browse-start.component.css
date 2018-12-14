@@ -1,0 +1,29 @@
+.browse-start {
+  margin-top: 150px;
+  font-family: QuicksandRegular;
+  margin-bottom: 100px;
+}
+.welcome {
+  text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+  color: goldenrod;
+  font-family: QuicksandBold;
+  height: 300px;
+  width: 700px;
+  text-align: center;
+  padding-top: 100px;
+}
+.btn {
+  border-color: goldenrod;
+  background-color: transparent;
+  color: black;
+}
+.usercol {
+  width: 500px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.browsecol {
+  width: 500px;
+  text-align: center;
+  margin-bottom: 50px;
+}

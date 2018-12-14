@@ -1,0 +1,89 @@
+<div class="app-edit">
+  <div class="row">
+    <div class="col-xs-12">
+      <form [formGroup]="listingForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+          <div class="col-xs-12">
+            <button
+              type="submit"
+              [disabled]="!listingForm.valid"
+              class="btn btn-success">Save</button>
+            <button
+              type="button"
+              (click)="onCancel()"
+              class="btn btn-danger">Cancel</button>
+            <br><hr>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="form-group">
+              <label for="title">Name of Listing</label>
+              <input type="text"
+                     id="title"
+                     formControlName="name"
+                     class="form-control">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="form-group">
+              <label for="area1">Address</label>
+              <input type="text"
+                     id="area1"
+                     formControlName="address"
+                     class="form-control">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="form-group">
+              <label for="rent">Rent</label>
+              <input type="text"
+                     id="rent"
+                     formControlName="rent"
+                     class="form-control">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="form-group">
+              <label for="description">Description</label>
+              <textarea type="text"
+                        id="description"
+                        formControlName="description"
+                        class="form-control" rows="6"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="form-group">
+              <label for="YAY">Test title</label>
+              <input type="text"
+                     id="YAY"
+                     formControlName="YAY"
+                     class="form-control">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="form-group">
+              <label for="NAY">Test Price</label>
+              <input type="text"
+                     id="NAY"
+                     formControlName="NAY"
+                     class="form-control">
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+

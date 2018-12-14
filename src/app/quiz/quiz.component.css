@@ -1,0 +1,35 @@
+.login {
+  font-family: QuicksandRegular;
+  width: 1500px;
+  display: inline-block;
+  text-align: center;
+  height: 500px;
+  margin: auto;
+  margin-top: 150px;
+  margin-bottom: 200px;
+}
+.loginBox {
+  border: 2px solid goldenrod;
+  margin-left: 200px;
+}
+
+.btn {
+  border-color: goldenrod;
+  background-color: transparent;
+  color: black;
+}
+a {
+  color: goldenrod;
+}
+label {
+  text-align: left;
+}
+input{
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+p{
+  font-weight: bold;
+  font-family: QuicksandBold;
+}
+

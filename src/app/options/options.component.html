@@ -1,0 +1,23 @@
+<div class="options">
+  <div class="optionIMG">
+    <img id="oIMG" src="assets/image/room.jpg">
+    <h2 style="text-align: center">How it works!</h2>
+    <p style="text-align: center">Select an option: </p>
+    <div class="oButton container">
+      <button (click)="onList()" id="haveroom" type="button">I HAVE A ROOM</button>
+      <button (click)="onBrowse()" id="looking" type="button">I'M LOOKING</button>
+    </div>
+  </div>
+
+  <div class="optionText">
+    <h1 [ngStyle]="{color: getColour()}">{{optionTitle}}</h1><hr>
+      <h4> {{ l1title }} </h4>
+      <h4> {{ l2title }} </h4>
+      <h4> {{ l3title }} </h4>
+      <h4> {{ l4title }} </h4><br>
+    <h2><b>Ready to get started?</b></h2>
+    <button type="button"
+            class="btn btn-primary btnOption"
+            [ngStyle]="{backgroundColor: getColour()}"> <a routerLink="{{routertext}}">{{ buttonText }}</a></button>
+  </div>
+</div><br><br><br><br><br><br><hr>

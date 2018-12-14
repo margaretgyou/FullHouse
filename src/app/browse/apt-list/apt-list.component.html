@@ -1,0 +1,45 @@
+<div class="app-list">
+  <div class="row">
+    <div class="col-md-5">
+      <div class="newlistform">
+        <div class="row">
+          <div class="col-xs-12">
+            <h4>Please fill out the form to list new room.</h4> <br>
+            <form class="form-styled bg-white" [formGroup]="newListForm" (ngSubmit)="onSubmit()">
+
+              <label>Title</label>
+              <input type="text" class="form-control" formControlName="title" width="100"/>
+              <label>Description</label>
+              <input type="text" class="form-control" rows="6" formControlName="description"/>
+              <label>Address</label>
+              <input type="text"  class="form-control" formControlName="address"/>
+              <label>Price</label>
+              <input type="text"  class="form-control" formControlName="price"/>
+              <br>
+              <button
+                class="btn btn-primary"
+                type="submit">Post</button><br>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--<div class="col-xs-12">
+      <button class="btn btn-success" (click)="onNewListing()">New Listing</button>
+    </div>-->
+  <div class="col-md-7">
+    <div class="mylist">
+      <h3>My Listings</h3><hr>
+      <div class="row">
+        <div class="col-xs-12">
+          <app-apt-item
+            *ngFor="let listingEl of listings; let i = index"
+            [listing]="listingEl"
+            [index]="i"></app-apt-item>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

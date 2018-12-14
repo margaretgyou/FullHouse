@@ -1,0 +1,21 @@
+<div class="room-item-item">
+  <a
+    href="#"
+    class="list-group-item clearfix"
+    >
+
+    <div class="pull-left">
+      <h4 class="list-group-item-heading">{{ listing.room.title}} </h4>Match Score: {{ listing.matchscore }}
+      <p class="list-group-item-text">${{ listing.room.price }}</p>
+      <p class="list-group-item-text">{{ listing.room.address }}, {{ listing.room.city }}</p>
+      <p class="list-group-item-text">{{ listing.room.description }}</p>
+      <p class="list-group-item-text">{{ listing.room.useremail }}</p>
+    </div>
+    <span class="pull-right">
+        <img [src]="listing.photoid"
+             alt="{{ listing.ltitle }}"
+             class="img-responsive"
+             style="max-height: 50px">
+      </span>
+  </a>
+</div>

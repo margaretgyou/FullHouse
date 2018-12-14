@@ -1,0 +1,29 @@
+.app-list {
+  margin-top: 100px;
+  margin-bottom: 200px;
+  margin-left: 20px;
+  font-family: QuicksandRegular;
+}
+.newlistform {
+  margin-top: 20px;
+  width: 500px;
+  margin-left: 130px;
+}
+#btnnn {
+  text-align: center;
+}
+.app-edit {
+  margin-top: 100px;
+}
+input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched {
+  border: 1px solid red;
+}
+.mylist {
+  width: 500px;
+  margin-left: 50px;
+}
+.btn {
+  border-color: goldenrod;
+  background-color: transparent;
+  color: black;
+}

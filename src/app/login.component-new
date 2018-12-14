@@ -1,0 +1,56 @@
+import { Component } from '@angular/core';
+import { UserProfile } from '../users/user-profile';
+import { Room } from '../rooms/room';
+import { AngularFireDatabase } from 'angularfire2/database';
+import { UserProfileDataService} from '../users/user-profile-data.service';
+import { RoomsDataService} from '../rooms/rooms-data.service';
+import { AngularFireList } from 'angularfire2/database';
+
+@Component({
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.css']
+})
+export class LoginComponent {
+  loadedFeature = 'login';
+
+  onNavigate(feature: string) {
+    this.loadedFeature = feature;
+  }
+
+  userProfilService;
+  roomsService;
+  user;
+  myRooms: Array<Room>;
+
+  constructor(private db: AngularFireDatabase) {
+      this.userProfilService = new UserProfileDataService(db);
+      this.roomsService = new RoomsDataService(db);
+      this.user = new UserProfile();
+  }
+  login(email:string, password:string){
+    let allUsers= this.userProfilService.getUserProfiles();
+    this.user = allUsers.subscribe(snapshots=>{
+      snapshots.forEach(snapshot =>{
+        if (snapshot.email == email && snapshot.password == password){
+          this.user = snapshot;
+          this.getMyRooms(this.user.email);
+
+        }
+      })
+
+    })
+  }
+
+  getMyRooms(email:String){
+    let rooms = this.roomsService.getRooms();
+    rooms.subscribe(snapshots=>{
+      this.myRooms = [];
+      snapshots.forEach(snapshot =>{
+        if (snapshot.useremail == email ){
+          this.myRooms.push(snapshot);
+        }
+      })
+    })
+  }
+}

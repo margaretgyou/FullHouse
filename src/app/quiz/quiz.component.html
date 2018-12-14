@@ -1,0 +1,122 @@
+<div class="container">
+  <div class="login">
+    <div class="loginBox col-md-8 col-lg-6">
+      <h3><b>Help Us Get To You Know You</b></h3>
+      <h4>Please fill out the form below to find your roommate match c:</h4> <br>
+      <form class="form-styled bg-white" [formGroup]="quizForm" (ngSubmit)="onSubmit()">
+
+        <p>Do you have room(s) to offer?</p>
+        <label for="yesOffer">Yes </label>
+        <input type="radio" value="true" formControlName="offerRoom">
+        <label for="noOffer">No </label>
+        <input type="radio" value="false" formControlName="offerRoom">
+
+
+        <p>My monthly budget/I'm offering room(s) at: </p>
+        <label for="below400"> $400 and below</label>
+        <input type="radio" value="below $400" formControlName="pricerange">
+        <label for="400-600"> $400-$600</label>
+        <input type="radio" value="$400-$600" formControlName="pricerange">
+        <label for="600-800"> $600-$800</label>
+        <input type="radio" value="$600-$800" formControlName="pricerange">
+        <label for="800-1000"> $800-$1000</label>
+        <input type="radio" value="$800-$1000" formControlName="pricerange">
+        <label for="1000+"> $1000+</label>
+        <input type="radio" value="$1000+"  formControlName="pricerange">
+
+
+        <p>Neighbourhood: </p>
+        <label for="mcgill"> McGill Ghetto</label>
+        <input type="radio" value="McGill Ghetto" formControlName="neighbourhood">
+        <label for="dt"> Downtown Montreal</label>
+        <input type="radio" value="Downtown Montreal" formControlName="neighbourhood">
+        <label for="mile"> Mile End</label>
+        <input type="radio" value="Mile End" formControlName="neighbourhood">
+        <label for="plateau"> Le Plateau</label>
+        <input type="radio" value="Le Plateau" formControlName="neighbourhood">
+        <label for="otherarea">Other</label>
+        <input type="radio" value="Other" formControlName="neighbourhood">
+
+
+
+        <p>Age: </p>
+        <label for="18"> 18-22</label>
+        <input type="radio" value="18-22" formControlName="age">
+        <label for="23"> 23-27</label>
+        <input type="radio" value="23-27" formControlName="age">
+        <label for="27"> 27-31</label>
+        <input type="radio" value="27-31" formControlName="age">
+        <label for="31"> 31+</label>
+        <input type="radio" value="31+" formControlName="age">
+
+
+        <p>Gender: </p>
+        <label for="female"> Female</label>
+        <input type="radio" value="Female" formControlName="gender">
+        <label for="male"> Male</label>
+        <input type="radio" value="Male" formControlName="gender">
+
+
+
+        <p>Bedtime: </p>
+        <label for="before10"> Before 10pm</label>
+        <input type="radio" value="Before 10pm" formControlName="bedtime">
+        <label for="10"> 10pm-12pm</label>
+        <input type="radio" value="10pm-12pm" formControlName="bedtime">
+        <label for="12"> 12pm-2am</label>
+        <input type="radio" value="12pm-2am" formControlName="bedtime">
+        <label for="2am"> 2am-4am</label>
+        <input type="radio" value="2am-4am" formControlName="bedtime">
+        <label for="4am"> 4am onwards</label>
+        <input type="radio" value="4am onwards" formControlName="bedtime">
+
+
+        <p>Wake time: </p>
+        <label for="before7"> Before 7am</label>
+        <input type="radio" value="before7" formControlName="waketime">
+        <label for="7am"> 7am-9am</label>
+        <input type="radio" value="7am-9am" formControlName="waketime">
+        <label for="9am"> 9am-11am</label>
+        <input type="radio" value="9am-11am" formControlName="waketime">
+        <label for="11am"> 11am-1pm</label>
+        <input type="radio" value="11am-1pm" formControlName="waketime">
+        <label for="1pm"> 1pm onwards</label>
+        <input type="radio" value="1pm onwards" formControlName="waketime">
+
+
+        <p>Cleanliness: </p>
+        <label for="5">5</label>
+        <input type="radio" value="5" formControlName="cleanliness">
+        <label for="4">4</label>
+        <input type="radio" value="4" formControlName="cleanliness">
+        <label for="3">3</label>
+        <input type="radio" value="3" formControlName="cleanliness">
+        <label for="2">2</label>
+        <input type="radio" value="2" formControlName="cleanliness">
+        <label for="1">1</label>
+        <input type="radio" value="1" formControlName="cleanliness">
+
+
+        <p>Noise</p>
+        <label for="n5">5</label>
+        <input type="radio" value="5" formControlName="noise">
+        <label for="n4">4</label>
+        <input type="radio" value="4" formControlName="noise">
+        <label for="n3">3</label>
+        <input type="radio" value="3" formControlName="noise">
+        <label for="n2">2</label>
+        <input type="radio" value="2" formControlName="noise">
+        <label for="n1">1</label>
+        <input type="radio" value="1" formControlName="noise">
+
+        <br>
+        <button
+          class="btn btn-primary"
+          type="submit"> Create Account </button><br><br><br>
+      </form>
+
+    </div>
+  </div>
+ <br><br><br><br><br><br><br>
+
+</div>

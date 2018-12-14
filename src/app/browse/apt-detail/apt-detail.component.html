@@ -1,0 +1,54 @@
+<div class="app-detail">
+  <div class="row">
+    <div class="col-xs-12">
+      <img src="" alt="" class="img-responsive">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>{{ listing.ltitle }}</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <div
+        class="btn-group" appDropdown>
+        <button type="button" class="btn btn-primary dropdown-toggle">
+          Options <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a>To profile</a> </li>
+          <li><a (click)="onEditListing()">Edit listing</a> </li> <!--EDIT/DELETE only if id matches the post id-->
+          <li><a (click)="onDeleteListing()">Delete listing</a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h3>{{ listing.address }}</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h3>${{ listing.price }}</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h3>{{ listing.description }}</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h3>{{ listing.listingtitle }}</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h3>{{ listing.listingprice }}</h3>
+    </div>
+  </div>
+</div>
+
+

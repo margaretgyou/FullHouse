@@ -1,0 +1,49 @@
+a {
+  color: white;
+}
+.options {
+  border-style: hidden;
+  font-family: QuicksandRegular;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.optionText {
+  margin-top: -20px;
+  border-style: hidden;
+  float: right;
+  width: 50%;
+  text-align: center;
+}
+.optionIMG {
+  border-style: hidden;
+  display: inline-block;
+  border-radius: 0%;
+  width: 400px;
+  float: left;
+}
+#oIMG {
+  width: 390px;
+}
+.oButton {
+  display: inline-block;
+  width: 400px;
+  color: white;
+}
+#haveroom {
+  background-color: lightseagreen;
+  color: white;
+  border: none;
+  float: left;
+  margin-left: 72px
+}
+#looking{
+  background-color: dodgerblue;
+  border: none;
+  float: right;
+  margin-right: 72px
+}
+.btnOption {
+  border-style: hidden;
+  font-size: 30px;
+}
+

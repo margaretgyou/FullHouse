@@ -1,0 +1,27 @@
+
+h5 {
+  color: lightseagreen;
+}
+div.about {
+  border-style: hidden;
+  width: 100%;
+  font-family: QuicksandRegular;
+  margin-top: 20px;
+}
+.aboutText {
+  border-style: hidden;
+  width: 50%;
+  float: left;
+
+}
+#aboutIMG {
+  border-style: hidden;
+  width: 400px;
+  float: right;
+  display: inline-block;
+  border-radius: 100%;
+}
+
+#title {
+  color: goldenrod;
+}

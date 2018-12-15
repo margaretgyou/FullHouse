@@ -1,7 +1,6 @@
 # Fullhouse
 
 This project was made for COMP 307 - final project. 
-https://myfullhouse-3d69f.firebaseapp.com
 
 ## Install and Deploy Guide
 

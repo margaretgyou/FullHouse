@@ -18,4 +18,4 @@ Navigate to `http://localhost:4200/`.
 
 ## Tools used
 
-HTML5, CSS, Javascript, Angular 6
+HTML5, CSS, Javascript, Angular 6, noSQL
